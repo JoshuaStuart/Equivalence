@@ -9,6 +9,11 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     private float moveInput;
 
+    public bool canGlide = true;
+    public float glidingSpeed;
+
+    private float initalGravityScale;
+
     private Rigidbody2D rb;
 
     private bool facingRight = true;
@@ -26,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        initalGravityScale = rb.gravityScale;
     }
 
     private void FixedUpdate()
@@ -46,7 +52,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
+    { 
         if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
@@ -57,9 +63,19 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
-        else if(Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded ==true)
+        else if(Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && canGlide == true && rb.velocity.y <= 0)
+        {
+            rb.gravityScale = 0;
+            rb.velocity = new Vector2(rb.velocity.x, glidingSpeed);
+        }
+        else
+        {
+            rb.gravityScale = initalGravityScale;
         }
     }
 

@@ -13,7 +13,10 @@ public class DeathScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        Time.timeScale = 0;
-        gameOverCanvas.gameObject.SetActive(true);
+        if (collision.CompareTag("Player"))
+        {
+            Time.timeScale = 0;
+            gameOverCanvas.gameObject.SetActive(true);
+        }
     }
 }
