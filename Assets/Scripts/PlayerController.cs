@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.up * jumpForce;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && canGlide == true && rb.velocity.y <= 0)
+        if(Input.GetKey(KeyCode.Space) && canGlide == true && rb.velocity.y <= 0)
         {
             rb.gravityScale = 0;
             rb.velocity = new Vector2(rb.velocity.x, glidingSpeed);
