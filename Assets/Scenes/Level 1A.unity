@@ -1218,7 +1218,7 @@ MonoBehaviour:
     sentences:
     - That jump looks pretty far.
     - Try jumping again in the air to make the gap.
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 1779567144}
 --- !u!4 &475101472
 Transform:
   m_ObjectHideFlags: 0
@@ -5080,7 +5080,7 @@ MonoBehaviour:
     sentences:
     - It looks like you can shoot.
     - Try shooting with the right click button to kill the enemies
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 1779567144}
 --- !u!4 &1605028359
 Transform:
   m_ObjectHideFlags: 0
@@ -5777,7 +5777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 707977971}
   dialogueText: {fileID: 1690008451}
-  dialogueBox: {fileID: 0}
+  dialogueBox: {fileID: 1779567144}
 --- !u!4 &1797494160
 Transform:
   m_ObjectHideFlags: 0
@@ -7021,6 +7021,18 @@ PrefabInstance:
     - target: {fileID: 1961205792112400972, guid: c930243d55f54534490b012ae2a70d30, type: 3}
       propertyPath: m_Name
       value: Player A
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961205792112400973, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961205792112400979, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: canGlide
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1961205792112400979, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: jumpForce
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1961205792112400982, guid: c930243d55f54534490b012ae2a70d30, type: 3}
       propertyPath: m_RootOrder

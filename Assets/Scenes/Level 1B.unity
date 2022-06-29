@@ -5805,11 +5805,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4611530872370448314, guid: 27f4f9fafa5381842bc8ba2047abb2c6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.741287
+      value: 19.9
       objectReference: {fileID: 0}
     - target: {fileID: 4611530872370448314, guid: 27f4f9fafa5381842bc8ba2047abb2c6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5742974
+      value: 3.21
       objectReference: {fileID: 0}
     - target: {fileID: 4611530872370448314, guid: 27f4f9fafa5381842bc8ba2047abb2c6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6535,6 +6535,26 @@ PrefabInstance:
       propertyPath: dialogueBox
       value: 
       objectReference: {fileID: 345139093}
+    - target: {fileID: 6069505114477753709, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
+      propertyPath: dialogue.name
+      value: Special Guidance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069505114477753709, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069505114477753709, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: You have no weapons.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069505114477753709, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
+      propertyPath: dialogue.sentences.Array.data[1]
+      value: Use your grapple to get around the eneimies.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6069505114477753709, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
+      propertyPath: dialogue.sentences.Array.data[2]
+      value: Left click on the flames to grapple to them.
+      objectReference: {fileID: 0}
     - target: {fileID: 6069505114477753711, guid: 3968ab341f4006c45ab9821fa74406dc, type: 3}
       propertyPath: m_Name
       value: Dialogue Trigger 1
@@ -6548,9 +6568,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7051218937597721388, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7051218937597721389, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
       propertyPath: m_Name
       value: Player B
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051218937597721394, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+      propertyPath: canGlide
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051218937597721394, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+      propertyPath: jumpForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051218937597721394, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+      propertyPath: glidingSpeed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7051218937597721399, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
       propertyPath: m_RootOrder

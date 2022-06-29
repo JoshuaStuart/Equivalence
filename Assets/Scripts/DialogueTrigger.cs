@@ -27,8 +27,6 @@ public class DialogueTrigger : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             Destroy(gameObject);
-        }
-        
-       
+        }       
     }
 }

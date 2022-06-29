@@ -16,9 +16,12 @@ public class GrappleHook : MonoBehaviour
 
     Vector2 target;
 
+    private Rigidbody2D rb;
+
     private void Start()
     {
         line = GetComponent<LineRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -53,6 +56,7 @@ public class GrappleHook : MonoBehaviour
 
         if(hit.collider != null)
         {
+            rb.gravityScale = 0;
             isGrappling = true;
             target = hit.point;
             line.enabled = true;
@@ -83,5 +87,6 @@ public class GrappleHook : MonoBehaviour
         line.SetPosition(1, target);
         retracting = true;
 
+        rb.gravityScale = 3;
     }
 }
