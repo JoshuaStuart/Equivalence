@@ -39,4 +39,30 @@ public class PlayQuit : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(4);
     }
+
+    //new load levels done for blake and connor's levels
+
+    public void BlakeA()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(4);
+    }
+
+    public void BlakeB()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(5);
+    }
+
+    public void ConnorA()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(6);
+    }
+
+    public void ConnorB()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(7);
+    }
 }

@@ -29,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test Level 4.unity
     guid: e40140cee648b564ab8494b8df0ae604
+  - enabled: 1
+    path: Assets/Scenes/Blake's Level/BLAKE LVL A.unity
+    guid: 99e80c3350c7f424a9af3654f7368024
+  - enabled: 1
+    path: Assets/Scenes/Blake's Level/BLAKE LVL B.unity
+    guid: 3a17ea9575625634e8d99d008a7ff831
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/Level 1A.unity
+    guid: 86ce2efda6e9cd44d80c1769d049b486
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/Level 1B.unity
+    guid: 7e9ab1cef53ed104f9c9de03b2775f5e
   m_configObjects: {}
