@@ -26,7 +26,7 @@ public class GrappleHook : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0) &&!isGrappling)
+        if(Input.GetMouseButtonDown(0) && !isGrappling)
         {
             StartGrapple();
         }
@@ -75,14 +75,22 @@ public class GrappleHook : MonoBehaviour
 
         Vector2 newPos;
 
-        for (; t < time; t += grappleShootSpeed * Time.deltaTime)
+        if(rb.velocity.y >= 0)
         {
-            newPos = Vector2.Lerp(transform.position, target, t / time);
-            line.SetPosition(0, transform.position);
-            line.SetPosition(1, newPos);
+            for (; t < time; t += grappleShootSpeed * Time.deltaTime)
+            {
+                newPos = Vector2.Lerp(transform.position, target, t / time);
+                line.SetPosition(0, transform.position);
+                line.SetPosition(1, newPos);
 
+                yield return null;
+            }
+        }
+        else
+        {
             yield return null;
         }
+            
 
         line.SetPosition(1, target);
         retracting = true;
