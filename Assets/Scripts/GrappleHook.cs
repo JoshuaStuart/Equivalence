@@ -9,7 +9,7 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] LayerMask grappleableMask;
     [SerializeField] float maxDistance = 10f;
     [SerializeField] float grappleSpeed = 10f;
-    [SerializeField] float grappleShootSpeed = 20f;
+    [SerializeField] float grappleShootSpeed = 10f;
 
     bool isGrappling = false;
     [HideInInspector] public bool retracting = false;
@@ -17,11 +17,14 @@ public class GrappleHook : MonoBehaviour
     Vector2 target;
 
     private Rigidbody2D rb;
+    private Animator anim;
 
     private void Start()
     {
         line = GetComponent<LineRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
     }
 
     private void Update()
@@ -29,9 +32,10 @@ public class GrappleHook : MonoBehaviour
         if(Input.GetMouseButtonDown(0) && !isGrappling)
         {
             StartGrapple();
+            anim.SetBool("grappling", true);
         }
 
-        if(retracting)
+        if (retracting)
         {
             Vector2 grapplePos = Vector2.Lerp(transform.position, target, grappleSpeed * Time.deltaTime);
 
@@ -44,8 +48,12 @@ public class GrappleHook : MonoBehaviour
                 retracting = false;
                 isGrappling = false;
                 line.enabled = false;
+                rb.gravityScale = 1;
             }
         }
+
+        anim.SetBool("grappling", false);
+
     }
 
     private void StartGrapple()
@@ -57,6 +65,7 @@ public class GrappleHook : MonoBehaviour
         if(hit.collider != null)
         {
             rb.gravityScale = 0;
+            rb.velocity = Vector2.zero;
             isGrappling = true;
             target = hit.point;
             line.enabled = true;
@@ -84,6 +93,7 @@ public class GrappleHook : MonoBehaviour
                 line.SetPosition(1, newPos);
 
                 yield return null;
+                
             }
         }
         else
@@ -94,7 +104,5 @@ public class GrappleHook : MonoBehaviour
 
         line.SetPosition(1, target);
         retracting = true;
-
-        rb.gravityScale = 3;
     }
 }
