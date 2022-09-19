@@ -26,12 +26,16 @@ public class PlayerController : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
+    private Animator anim;
+
+
 
     private void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         initalGravityScale = rb.gravityScale;
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -49,6 +53,15 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
         }
+
+        if(moveInput == 0)
+        {
+            anim.SetBool("isRunning", false);
+        }
+        else
+        {
+            anim.SetBool("isRunning", true);
+        }
     }
 
     void Update()
@@ -56,27 +69,41 @@ public class PlayerController : MonoBehaviour
         if(isGrounded == true)
         {
             extraJumps = extraJumpsValue;
+            anim.SetBool("isJumpimg", true);
+
+        }
+        else
+        {
+            anim.SetBool("isJumpimg", false);
+
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
+            anim.SetTrigger("takeOff");
             rb.velocity = Vector2.up * jumpForce;
+            GetComponent<AudioSource>().Play();
             extraJumps--;
         }
         else if(Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             rb.velocity = Vector2.up * jumpForce;
+            GetComponent<AudioSource>().Play();
         }
-
-        if(Input.GetKey(KeyCode.Space) && canGlide == true && rb.velocity.y <= 0)
+        if(canGlide == true)
         {
-            rb.gravityScale = 0;
-            rb.velocity = new Vector2(rb.velocity.x, glidingSpeed);
+            if (Input.GetKey(KeyCode.Space) && rb.velocity.y <= 0)
+            {
+                rb.gravityScale = 0;
+                rb.velocity = new Vector2(rb.velocity.x, glidingSpeed);
+            }
+            else
+            {
+                rb.gravityScale = initalGravityScale;
+            }
         }
-        else
-        {
-            rb.gravityScale = initalGravityScale;
-        }
+           
+        
     }
 
     void Flip()
