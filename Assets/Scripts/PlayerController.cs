@@ -28,10 +28,12 @@ public class PlayerController : MonoBehaviour
 
     private Animator anim;
 
-
+    //keeping track of what has been collected, use in player script
+    public List<string> collection;
 
     private void Start()
     {
+        collection = new List<string>();
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         initalGravityScale = rb.gravityScale;
@@ -112,5 +114,29 @@ public class PlayerController : MonoBehaviour
         Vector3 Scaler = transform.localScale;
         Scaler.x *= -1;
         transform.localScale = Scaler;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Collectable"))
+        {
+            Debug.Log("collectable hit");
+
+            string itemType = collision.gameObject.GetComponent<Collectable>().itemType;
+
+            //need to use playerprefs to keep the list intact in order to not lose those already collected
+            PlayerPrefs.SetString(itemType, itemType);
+
+            collection.Add(itemType);
+
+
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }
