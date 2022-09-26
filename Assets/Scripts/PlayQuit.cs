@@ -22,33 +22,25 @@ public class PlayQuit : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void LoadLevel1A()
+    public void LoadLevel1_A()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(2);
     }
 
-    public void LoadLevel1B()
+    public void LoadLevel1_B()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(3);
     }
 
-    public void LoadLevel3()
+    public void LoadLeve2_A()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(4);
     }
 
-    //new load levels done for blake and connor's levels
-
-    public void BlakeA()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(4);
-    }
-
-    public void BlakeB()
+    public void LoadLeve2_B()
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(5);
@@ -64,5 +56,17 @@ public class PlayQuit : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(7);
+    }
+
+    public void JoshTest1()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(8);
+    }
+
+    public void JoshTest2()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(9);
     }
 }
