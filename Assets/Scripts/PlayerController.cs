@@ -118,14 +118,25 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (collision.CompareTag("Collectable"))
         {
+            Debug.Log("collectable hit");
+
             string itemType = collision.gameObject.GetComponent<Collectable>().itemType;
 
+            //need to use playerprefs to keep the list intact in order to not lose those already collected
+            PlayerPrefs.SetString(itemType, itemType);
+
             collection.Add(itemType);
-            //add something for the story to be told/narrative to be shown such as a visual ntoe, etc...
+
 
             Destroy(collision.gameObject);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        
     }
 }
