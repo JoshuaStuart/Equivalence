@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7405285057295133067}
   - component: {fileID: 7405285057295133066}
   - component: {fileID: 7405285057295133065}
+  - component: {fileID: -1662851806982865752}
   m_Layer: 0
   m_Name: CollectableItem
   m_TagString: Collectable
@@ -123,4 +124,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: what does the item give
-  narrative: add in relative story that this gives to the player
+  collectableNumber: 0
+  player: {fileID: 0}
+--- !u!114 &-1662851806982865752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405285057295133064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b388e464dd1394faf80fe36343632a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
+  dialogueBox: {fileID: 0}
