@@ -1747,7 +1747,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 242268109}
         m_TargetAssemblyTypeName: PlayQuit, Assembly-CSharp
-        m_MethodName: LoadLevel1A
+        m_MethodName: JoshTest2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3717,7 +3717,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1918549252}
         m_TargetAssemblyTypeName: PlayQuit, Assembly-CSharp
-        m_MethodName: LoadLevel1B
+        m_MethodName: ReturnToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

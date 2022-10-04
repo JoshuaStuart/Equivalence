@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Josh's Test Levels/Level 2 B 2.unity
     guid: b9100ec39dd0bd14bb534dfe7dad44d9
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/New Levels/lvl 1.unity
+    guid: ad849fb1763c4a44b872905bbc9b0c29
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/New Levels/lvl 2.unity
+    guid: 6171f9c127bf57d45adfe827ef266779
+  - enabled: 1
+    path: Assets/Scenes/Josh's Test Levels/Greyboxing 1.unity
+    guid: 200524a6b3ce1504e943d88d87c00f64
+  - enabled: 1
+    path: Assets/Scenes/Josh's Test Levels/Greyboxing 2.unity
+    guid: eddebaaf0521732459b8d0a3ef119f9d
   m_configObjects: {}
