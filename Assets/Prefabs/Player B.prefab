@@ -235,6 +235,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   extraJumpsValue: 0
+  collection: []
 --- !u!114 &7051218937597721397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +481,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.282821
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
