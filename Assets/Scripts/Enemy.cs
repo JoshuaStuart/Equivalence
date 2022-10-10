@@ -22,4 +22,30 @@ public class Enemy : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    //patrolling on platforms; from the following video - https://www.youtube.com/watch?v=aRxuKoJH9Y0&t=375s
+    public int speed;
+    private bool movingRight = true;
+    public Transform groundDetection;
+
+    private void Update()
+    {
+        transform.Translate(Vector2.left * speed * Time.deltaTime);
+        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+        if (groundinfo.collider == false)
+        {
+            //the ray has not hit anything meaning there is no platform below the ground detection
+            if (movingRight == true)
+            {
+                movingRight = false;
+                transform.eulerAngles = new Vector3(0, -180, 0);
+            }
+            else
+            {
+                movingRight = true;
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+        }
+    }
+    //using a raycast to see if their is a platform in front
 }
