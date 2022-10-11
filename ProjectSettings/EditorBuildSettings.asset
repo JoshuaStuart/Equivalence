@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Josh's Test Levels/Week 2 Greyboxing 4.unity
     guid: 56ec8932f27a8db4198c61baa0f0d5fc
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/New Levels/10th Oct/Enemies A.unity
+    guid: f5d21c0e48e29004cad66c00f167859a
+  - enabled: 1
+    path: Assets/Scenes/Connor's Level/New Levels/10th Oct/Enemies B.unity
+    guid: f1476acd75e6e7f448d9181562b574df
   m_configObjects: {}

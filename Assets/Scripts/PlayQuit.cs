@@ -167,4 +167,16 @@ public class PlayQuit : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(9);
     }
+
+    public void LoadLeve5_A()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(10);
+    }
+
+    public void LoadLeve5_B()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(11);
+    }
 }
