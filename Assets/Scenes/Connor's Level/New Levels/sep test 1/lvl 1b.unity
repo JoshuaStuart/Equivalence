@@ -3699,6 +3699,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7051218938356098754, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+      propertyPath: orthographic size
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
 --- !u!1001 &737531278
@@ -7441,8 +7445,8 @@ GameObject:
   - component: {fileID: 1424570410}
   - component: {fileID: 1424570414}
   - component: {fileID: 1424570413}
-  - component: {fileID: 1424570412}
   - component: {fileID: 1424570411}
+  - component: {fileID: 1424570412}
   m_Layer: 0
   m_Name: Water (1)
   m_TagString: Untagged
@@ -7477,19 +7481,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 242268113}
---- !u!65 &1424570412
-BoxCollider:
+--- !u!61 &1424570412
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424570409}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.000000059604645}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 144.13828}
-  m_Center: {x: 0, y: 0, z: -71.56914}
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!23 &1424570413
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10071,6 +10088,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  sidewaysMovement: 0
+  speed: 0
+  groundDetection: {fileID: 0}
 --- !u!61 &1734164548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11877,8 +11897,8 @@ GameObject:
   - component: {fileID: 2142923311}
   - component: {fileID: 2142923310}
   - component: {fileID: 2142923309}
-  - component: {fileID: 2142923308}
   - component: {fileID: 2142923307}
+  - component: {fileID: 2142923308}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -11899,19 +11919,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 242268113}
---- !u!65 &2142923308
-BoxCollider:
+--- !u!61 &2142923308
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2142923306}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 144.13828}
-  m_Center: {x: 0, y: 0, z: -71.56914}
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!23 &2142923309
 MeshRenderer:
   m_ObjectHideFlags: 0

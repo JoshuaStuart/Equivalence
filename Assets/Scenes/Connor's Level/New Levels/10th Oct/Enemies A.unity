@@ -8583,7 +8583,7 @@ PrefabInstance:
       objectReference: {fileID: 23473729}
     - target: {fileID: 4750569882934093704, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: sidewaysMovement
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4750569882934093705, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_Size.x
@@ -11151,7 +11151,7 @@ PrefabInstance:
       objectReference: {fileID: 425089706}
     - target: {fileID: 4750569882934093704, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: sidewaysMovement
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4750569882934093705, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_Size.x
@@ -12033,7 +12033,7 @@ PrefabInstance:
       objectReference: {fileID: 70381806}
     - target: {fileID: 4750569882934093704, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: sidewaysMovement
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4750569882934093705, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_Size.x
@@ -12665,7 +12665,7 @@ PrefabInstance:
       objectReference: {fileID: 1847187756}
     - target: {fileID: 4750569882934093704, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: sidewaysMovement
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4750569882934093705, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_Size.x
@@ -13367,7 +13367,7 @@ PrefabInstance:
       objectReference: {fileID: 1755982027}
     - target: {fileID: 4750569882934093704, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: sidewaysMovement
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4750569882934093705, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_Size.x

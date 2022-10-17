@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (sidewaysMovement == true)
+        if (sidewaysMovement == false)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
