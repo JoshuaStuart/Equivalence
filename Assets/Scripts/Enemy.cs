@@ -6,6 +6,9 @@ public class Enemy : MonoBehaviour
 {
     public int health;
 
+    //if true then the enemy will move left to right otherwise it will go up and down rather than left to right
+    public bool sidewaysMovement;
+
     //public GameObject deathEffect;
 
     public void TakeDamage(int damage)
@@ -30,20 +33,42 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(Vector2.left * speed * Time.deltaTime);
-        RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
-        if (groundinfo.collider == false)
+        if (sidewaysMovement == true)
         {
-            //the ray has not hit anything meaning there is no platform below the ground detection
-            if (movingRight == true)
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+            if (groundinfo.collider == false)
             {
-                movingRight = false;
-                transform.eulerAngles = new Vector3(0, -180, 0);
+                //the ray has not hit anything meaning there is no platform below the ground detection
+                if (movingRight == true)
+                {
+                    movingRight = false;
+                    transform.eulerAngles = new Vector3(0, -180, 0);
+                }
+                else
+                {
+                    movingRight = true;
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                }
             }
-            else
+        }
+        else
+        {
+            transform.Translate(Vector2.up * speed * Time.deltaTime);
+            RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+            if (groundinfo.collider == false)
             {
-                movingRight = true;
-                transform.eulerAngles = new Vector3(0, 0, 0);
+                //the ray has not hit anything meaning there is no platform below the ground detection
+                if (movingRight == true)
+                {
+                    movingRight = false;
+                    transform.eulerAngles = new Vector3(-180, 0, 0);
+                }
+                else
+                {
+                    movingRight = true;
+                    transform.eulerAngles = new Vector3(0, 0, 0);
+                }
             }
         }
     }
