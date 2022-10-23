@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public int health;
 
     //if true then the enemy will move left to right otherwise it will go up and down rather than left to right
-    public bool sidewaysMovement;
+    public bool updownMovement;
 
     //public GameObject deathEffect;
 
@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (sidewaysMovement == false)
+        if (updownMovement == false)
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
