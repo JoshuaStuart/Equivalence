@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour
         else
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
-            RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
+            RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
             if (groundinfo.collider == false)
             {
                 //the ray has not hit anything meaning there is no platform below the ground detection
