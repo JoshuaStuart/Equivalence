@@ -12,33 +12,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Level Select.unity
     guid: 38c1027275ce11049990aac91d4129d8
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Week 2 Greyboxing 3.unity
-    guid: d9e0ffcfeda8ba6468d4de5396cbab3e
+    path: Assets/Scenes/Inbuild Levels/Level 1 Ice.unity
+    guid: 4aed227c04ccca044a128fc44258cf1c
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Week 2 Greyboxing 4.unity
-    guid: 56ec8932f27a8db4198c61baa0f0d5fc
+    path: Assets/Scenes/Inbuild Levels/Level 1 Fire.unity
+    guid: 3f4181c76d329264bb5f4c615e7428d5
   - enabled: 1
-    path: Assets/Scenes/Connor's Level/New Levels/sep test 1/lvl 1a.unity
-    guid: ca6ec851096fe4742a56bd90689234f9
+    path: Assets/Scenes/Inbuild Levels/Level 2 Ice.unity
+    guid: 5fe13efe1b2980c47b449d4a1b6a140e
   - enabled: 1
-    path: Assets/Scenes/Connor's Level/New Levels/sep test 1/lvl 1b.unity
-    guid: d2ff54b53e0bf674d994156d7bc96c43
+    path: Assets/Scenes/Inbuild Levels/Level 2 Fire.unity
+    guid: e6061f510eee88a439484cbd345dde5b
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Level 2 B 1.unity
-    guid: ff97ec162218f034bbf2ea9162e7b6d7
+    path: Assets/Scenes/Inbuild Levels/Level 3 Ice.unity
+    guid: 4b3adbc958dba1f489b8b81f74516a9b
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Level 2 B 2.unity
-    guid: b9100ec39dd0bd14bb534dfe7dad44d9
+    path: Assets/Scenes/Inbuild Levels/Level 3 Fire.unity
+    guid: e0200aa3d5095524a93a6ba15de6b927
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Level 1 A.unity
-    guid: cdb68604b07ddac45b2d8f93d88fe50f
+    path: Assets/Scenes/Inbuild Levels/Level 4 Ice.unity
+    guid: 4938e99cc69ab2644889f618f6cfb11c
   - enabled: 1
-    path: Assets/Scenes/Josh's Test Levels/Level 1 B.unity
-    guid: b7b730622b6adfe4e8a8ab0215a0f92e
+    path: Assets/Scenes/Inbuild Levels/Level 4 Fire.unity
+    guid: 846ccf6f2fe5cd244bacf3c51b6a1371
   - enabled: 1
-    path: Assets/Scenes/Connor's Level/New Levels/10th Oct/Enemies A.unity
-    guid: f5d21c0e48e29004cad66c00f167859a
+    path: Assets/Scenes/Inbuild Levels/Level 5 Ice.unity
+    guid: b449bd52cf4924a45a2f477ba364c7a7
   - enabled: 1
-    path: Assets/Scenes/Connor's Level/New Levels/10th Oct/Enemies B.unity
-    guid: f1476acd75e6e7f448d9181562b574df
+    path: Assets/Scenes/Inbuild Levels/Level 5 Fire.unity
+    guid: 0514a260f16b7cf4fb5cc57485669e79
   m_configObjects: {}
