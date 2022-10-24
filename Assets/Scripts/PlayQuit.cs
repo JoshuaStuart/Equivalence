@@ -45,8 +45,6 @@ public class PlayQuit : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(5);
     }
-
-    /* //better worded functions for swapping to the correct level scene
     public void LoadLeve3_A()
     {
         Time.timeScale = 1;
@@ -95,6 +93,8 @@ public class PlayQuit : MonoBehaviour
         SceneManager.LoadScene(13);
     }
 
+
+    /* //better worded functions for swapping to the correct level scene
     public void LoadLeve7_A()
     {
         Time.timeScale = 1;
@@ -143,40 +143,4 @@ public class PlayQuit : MonoBehaviour
         SceneManager.LoadScene(21);
     }
      */
-
-    public void ConnorA()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(6);
-    }
-
-    public void ConnorB()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(7);
-    }
-
-    public void JoshTest1()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(8);
-    }
-
-    public void JoshTest2()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(9);
-    }
-
-    public void LoadLeve5_A()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(10);
-    }
-
-    public void LoadLeve5_B()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(11);
-    }
 }

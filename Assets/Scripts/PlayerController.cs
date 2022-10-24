@@ -31,6 +31,10 @@ public class PlayerController : MonoBehaviour
     //keeping track of what has been collected, use in player script
     public List<string> collection;
 
+    //setting up details for creating platforms whilst jumping
+    public GameObject newPlatform;
+    public bool canCreate;
+
     private void Start()
     {
         collection = new List<string>();
@@ -104,10 +108,27 @@ public class PlayerController : MonoBehaviour
                 rb.gravityScale = initalGravityScale;
             }
         }
-           
-        
-    }
 
+        //creating platforms in game
+        if (canCreate == true && isGrounded == false)
+        {
+            //the character is able to not only create platforms but is also not in the air
+            float distance = 1f;
+
+            RaycastHit2D groundinfo = Physics2D.Raycast(this.transform.position, Vector2.down, distance);
+            Debug.Log(groundinfo);
+
+            Debug.Log(groundinfo.collider);
+
+            //the player must use a button possibly a mouse click as this will be on the ice character as the fire will be able to shoot
+            if (Input.GetKey(KeyCode.C) && groundinfo.collider.tag != "ground") {
+            Debug.Log("Pressed c");
+            GameObject currentPlatform = Instantiate(newPlatform);
+            currentPlatform.transform.position = new Vector2(this.transform.position.x, (this.transform.position.y - distance));
+            }
+        }
+    }
+    
     void Flip()
     {
         facingRight = !facingRight;
