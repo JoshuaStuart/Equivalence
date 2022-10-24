@@ -112,6 +112,8 @@ public class PlayerController : MonoBehaviour
         //creating platforms in game
         if (canCreate == true && isGrounded == false)
         {
+            GameObject currentPlatform;
+
             //the character is able to not only create platforms but is also not in the air
             float distance = 1f;
 
@@ -121,9 +123,8 @@ public class PlayerController : MonoBehaviour
             Debug.Log(groundinfo.collider);
 
             //the player must use a button possibly a mouse click as this will be on the ice character as the fire will be able to shoot
-            if (Input.GetKey(KeyCode.C) && groundinfo.collider.tag != "ground") {
-            Debug.Log("Pressed c");
-            GameObject currentPlatform = Instantiate(newPlatform);
+            if ((Input.GetMouseButtonDown(0) && groundinfo.collider.tag != "ground")/* add in a part to allow a set amount of paltforms created */) {
+            currentPlatform = Instantiate(newPlatform);
             currentPlatform.transform.position = new Vector2(this.transform.position.x, (this.transform.position.y - distance));
             }
         }

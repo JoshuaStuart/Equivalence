@@ -6,13 +6,19 @@ public class Platforms : MonoBehaviour
 {
     public float timeRemaining;
 
+    public void Awake()
+    {
+        timeRemaining = 5;
+    }
     private void Update()
     {
-        timeRemaining--;
+        timeRemaining -= Time.deltaTime;
 
-        if (timeRemaining <= 0)
+        Debug.Log(timeRemaining);
+
+        if (timeRemaining < 1)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 }
