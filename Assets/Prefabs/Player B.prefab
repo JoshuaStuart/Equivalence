@@ -236,6 +236,9 @@ MonoBehaviour:
     m_Bits: 64
   extraJumpsValue: 0
   collection: []
+  newPlatform: {fileID: 0}
+  canCreate: 0
+  currentPlatform: {fileID: 0}
 --- !u!114 &7051218937597721397
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1050,7 +1050,8 @@ MonoBehaviour:
   dialogue:
     name: Your Own Mind
     sentences:
-    - I forgot about this wall. Well time to make some ground then...
+    - There seems to be a wall blocking the way. It must have been them...
+    - This won't stop me. There must be a way around it...
   dialogueBox: {fileID: 1779567144}
 --- !u!4 &83770875
 Transform:
@@ -7396,6 +7397,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1961205792112400977, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1961205792112400979, guid: c930243d55f54534490b012ae2a70d30, type: 3}
       propertyPath: canCreate
       value: 1
@@ -12836,6 +12841,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+--- !u!1 &1260882174 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7051218937597721389, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+  m_PrefabInstance: {fileID: 1260882173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1260882175 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7051218937597721399, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+  m_PrefabInstance: {fileID: 1260882173}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1260882176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260882174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa44f4482b0b9544a5afde9e0f7c7d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 1337977946}
+  bulletPrefab: {fileID: 2960659620709000505, guid: ef9f9a36a16888040a43c1328241ffd9, type: 3}
 --- !u!1001 &1264288244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13541,6 +13570,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6933720675551081883, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
   m_PrefabInstance: {fileID: 1330598574}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1337977945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337977946}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337977946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1337977945}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.20299993, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1260882175}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1345535178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16027,7 +16086,8 @@ MonoBehaviour:
   dialogue:
     name: Your Own Mind
     sentences:
-    - Nearly back home. Just need to make it the other side.
+    - I swear they went this way... I haven't ventured this far out ever.
+    - I don't know where to go...
   dialogueBox: {fileID: 1779567144}
 --- !u!4 &1605028359
 Transform:
