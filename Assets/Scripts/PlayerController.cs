@@ -34,6 +34,7 @@ public class PlayerController : MonoBehaviour
     //setting up details for creating platforms whilst jumping
     public GameObject newPlatform;
     public bool canCreate;
+    public GameObject currentPlatform;
 
     private void Start()
     {
@@ -112,20 +113,22 @@ public class PlayerController : MonoBehaviour
         //creating platforms in game
         if (canCreate == true && isGrounded == false)
         {
-            GameObject currentPlatform;
+            if (currentPlatform == null)
+            {
+                //the character is able to not only create platforms but is also not in the air
+                float distance = 1f;
 
-            //the character is able to not only create platforms but is also not in the air
-            float distance = 1f;
+                RaycastHit2D groundinfo = Physics2D.Raycast(this.transform.position, Vector2.down, distance);
+                Debug.Log(groundinfo);
 
-            RaycastHit2D groundinfo = Physics2D.Raycast(this.transform.position, Vector2.down, distance);
-            Debug.Log(groundinfo);
+                Debug.Log(groundinfo.collider);
 
-            Debug.Log(groundinfo.collider);
-
-            //the player must use a button possibly a mouse click as this will be on the ice character as the fire will be able to shoot
-            if ((Input.GetMouseButtonDown(0) && groundinfo.collider.tag != "ground")/* add in a part to allow a set amount of paltforms created */) {
-            currentPlatform = Instantiate(newPlatform);
-            currentPlatform.transform.position = new Vector2(this.transform.position.x, (this.transform.position.y - distance));
+                //the player must use a button possibly a mouse click as this will be on the ice character as the fire will be able to shoot
+                if ((Input.GetMouseButtonDown(0) && groundinfo.collider.tag != "ground")/* add in a part to allow a set amount of paltforms created */)
+                {
+                    currentPlatform = Instantiate(newPlatform);
+                    currentPlatform.transform.position = new Vector2(this.transform.position.x, (this.transform.position.y - distance));
+                }
             }
         }
     }
