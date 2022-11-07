@@ -8,7 +8,7 @@ public class Platforms : MonoBehaviour
 
     public void Awake()
     {
-        timeRemaining = 5;
+        timeRemaining = 2;
     }
     private void Update()
     {

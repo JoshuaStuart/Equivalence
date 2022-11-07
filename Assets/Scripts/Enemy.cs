@@ -37,7 +37,9 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
-            if (groundinfo.collider == false)
+            RaycastHit2D groundinfol = Physics2D.Raycast(groundDetection.position, Vector2.left, .2f);
+            RaycastHit2D groundinfor = Physics2D.Raycast(groundDetection.position, Vector2.right, .2f);
+            if (groundinfo.collider == false || groundinfol == true || groundinfor == true)
             {
                 //the ray has not hit anything meaning there is no platform below the ground detection
                 if (movingRight == true)
@@ -56,7 +58,9 @@ public class Enemy : MonoBehaviour
         {
             transform.Translate(Vector2.up * speed * Time.deltaTime);
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
-            if (groundinfo.collider == false)
+            RaycastHit2D groundinfol = Physics2D.Raycast(groundDetection.position, Vector2.left, .2f);
+            RaycastHit2D groundinfor = Physics2D.Raycast(groundDetection.position, Vector2.right, .2f);
+            if (groundinfo.collider == false || groundinfol == true || groundinfor == true)
             {
                 //the ray has not hit anything meaning there is no platform below the ground detection
                 if (movingRight == true)
@@ -73,4 +77,5 @@ public class Enemy : MonoBehaviour
         }
     }
     //using a raycast to see if their is a platform in front
+
 }
