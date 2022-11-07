@@ -2630,7 +2630,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 242268109}
         m_TargetAssemblyTypeName: PlayQuit, Assembly-CSharp
-        m_MethodName: LoadLevel1B
+        m_MethodName: LoadLeve4_B
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
