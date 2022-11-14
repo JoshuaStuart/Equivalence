@@ -9918,6 +9918,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784851427}
     m_Modifications:
+    - target: {fileID: 4028261027070921298, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 242268113}
     - target: {fileID: 4750569882934093707, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10824,6 +10828,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784851427}
     m_Modifications:
+    - target: {fileID: 4028261027070921298, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 242268113}
     - target: {fileID: 4750569882934093707, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14286,6 +14294,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 784851427}
     m_Modifications:
+    - target: {fileID: 4028261027070921298, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 242268113}
     - target: {fileID: 4750569882934093707, guid: 63b15b28502409644834156a00e7fa8b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -15160,7 +15172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1928526697
 Transform:
   m_ObjectHideFlags: 0
@@ -15169,7 +15181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928526696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.1, y: -30, z: 0}
+  m_LocalPosition: {x: -49.98, y: -30, z: 0}
   m_LocalScale: {x: 1, y: 0.3375, z: 1}
   m_Children: []
   m_Father: {fileID: 791297737}
