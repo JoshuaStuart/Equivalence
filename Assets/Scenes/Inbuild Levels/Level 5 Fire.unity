@@ -3736,6 +3736,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2030815910}
     m_Modifications:
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1779567144}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Congratulations you found a Collectible!
+      objectReference: {fileID: 0}
     - target: {fileID: 7405285057295133060, guid: 44699443034b09f4ead193f399818cb8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5517,6 +5529,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2030815910}
     m_Modifications:
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1779567144}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Congratulations you found a Collectible!
+      objectReference: {fileID: 0}
     - target: {fileID: 7405285057295133060, guid: 44699443034b09f4ead193f399818cb8, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7793,6 +7817,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+--- !u!1 &699634582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6933720674568771990, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+  m_PrefabInstance: {fileID: 2100485512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &699634586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699634582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1260882174}
 --- !u!1001 &703934955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9350,6 +9392,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2030815910}
     m_Modifications:
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1779567144}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Congratulations you found a Collectible!
+      objectReference: {fileID: 0}
     - target: {fileID: 7405285057295133060, guid: 44699443034b09f4ead193f399818cb8, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9741,6 +9795,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6933720675551081883, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
   m_PrefabInstance: {fileID: 625650234}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &917370329 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6933720674568771990, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+  m_PrefabInstance: {fileID: 459322430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &917370330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917370329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1260882174}
 --- !u!4 &924307911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6933720675551081883, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
@@ -11760,6 +11832,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2030815910}
     m_Modifications:
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 1779567144}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -1662851806982865752, guid: 44699443034b09f4ead193f399818cb8, type: 3}
+      propertyPath: dialogue.sentences.Array.data[0]
+      value: Congratulations you found a Collectible!
+      objectReference: {fileID: 0}
     - target: {fileID: 7405285057295133060, guid: 44699443034b09f4ead193f399818cb8, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -12773,6 +12857,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6933720675551081883, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
   m_PrefabInstance: {fileID: 1884373272}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1253106018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6933720674568771990, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+  m_PrefabInstance: {fileID: 1658015773}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1253106019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253106018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1260882174}
 --- !u!1001 &1256061600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16183,6 +16285,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6933720675551081883, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
   m_PrefabInstance: {fileID: 1603749700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1604945088 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6933720674568771990, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+  m_PrefabInstance: {fileID: 196918027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1604945092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604945088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1260882174}
 --- !u!1 &1605028356
 GameObject:
   m_ObjectHideFlags: 0
@@ -18862,6 +18982,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1773096468 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6933720674568771990, guid: 5332a794f898d1e45ba646360e166f97, type: 3}
+  m_PrefabInstance: {fileID: 89907697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1773096472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773096468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1260882174}
 --- !u!1 &1779567143
 GameObject:
   m_ObjectHideFlags: 0
