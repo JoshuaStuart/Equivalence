@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 2f);
             RaycastHit2D groundinfol = Physics2D.Raycast(groundDetection.position, Vector2.left, .2f);
             RaycastHit2D groundinfor = Physics2D.Raycast(groundDetection.position, Vector2.right, .2f);
-            if (groundinfo.collider == false || groundinfol == true || groundinfor == true)
+            if (((groundinfo.collider == false) || (groundinfol == true && groundinfol.collider.tag != "Player") || (groundinfor == true && groundinfor.collider.tag != "Player")) /*&& (groundinfol.collider.tag != "Player" && groundinfor.collider.tag != "Player")*/)
             {
                 //the ray has not hit anything meaning there is no platform below the ground detection
                 if (movingRight == true)
@@ -60,7 +60,7 @@ public class Enemy : MonoBehaviour
             RaycastHit2D groundinfo = Physics2D.Raycast(groundDetection.position, Vector2.down, 1f);
             RaycastHit2D groundinfol = Physics2D.Raycast(groundDetection.position, Vector2.left, .2f);
             RaycastHit2D groundinfor = Physics2D.Raycast(groundDetection.position, Vector2.right, .2f);
-            if (groundinfo.collider == false || groundinfol == true || groundinfor == true)
+            if (((groundinfo.collider == false) || (groundinfol == true) || (groundinfor == true)) && (groundinfol.collider.tag != "Player" && groundinfor.collider.tag != "Player"))
             {
                 //the ray has not hit anything meaning there is no platform below the ground detection
                 if (movingRight == true)
