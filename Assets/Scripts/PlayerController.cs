@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement")]
     public float speed;
 
     public float jumpForce;
@@ -31,10 +32,14 @@ public class PlayerController : MonoBehaviour
     //keeping track of what has been collected, use in player script
     public List<string> collection;
 
+    [Header("Platform Creation")]
     //setting up details for creating platforms whilst jumping
     public GameObject newPlatform;
     public bool canCreate;
     public GameObject currentPlatform;
+
+    [Header("UI Variables")]
+    public GameObject pauseMenu;
 
     private void Start()
     {
@@ -130,6 +135,15 @@ public class PlayerController : MonoBehaviour
                     currentPlatform.transform.position = new Vector2(this.transform.position.x, (this.transform.position.y - distance));
                 }
             }
+        }
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            //pause menu
+            Time.timeScale = 0; ;
+            pauseMenu.SetActive(true);
+
+            //reverse the code above for exiting the pausemenu
         }
     }
     
