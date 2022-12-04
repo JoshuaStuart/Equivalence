@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
+    public GameCounter gc;
+
     public string itemType;
     public int collectableNumber;
 
@@ -25,5 +27,10 @@ public class Collectable : MonoBehaviour
         {
             //the collection does not have the itemType at the moment so therefore it has not been collected
         }
+    }
+
+    private void OnDestroy()
+    {
+        gc.collectables++;
     }
 }

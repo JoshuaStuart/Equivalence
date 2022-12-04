@@ -37,6 +37,8 @@ public class PlayerController : MonoBehaviour
     public GameObject newPlatform;
     public bool canCreate;
     public GameObject currentPlatform;
+    public int maxPlatforms;
+    public int usedPlatforms = 0;
 
     [Header("UI Variables")]
     public GameObject pauseMenu;
@@ -116,10 +118,11 @@ public class PlayerController : MonoBehaviour
         }
 
         //creating platforms in game
-        if (canCreate == true && isGrounded == false)
+        if (canCreate == true && isGrounded == false && (usedPlatforms <= maxPlatforms))
         {
             if (currentPlatform == null)
             {
+                usedPlatforms++;
                 //the character is able to not only create platforms but is also not in the air
                 float distance = 1f;
 
