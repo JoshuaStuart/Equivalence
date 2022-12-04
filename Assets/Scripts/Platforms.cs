@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Platforms : MonoBehaviour
 {
+    public GameCounter gc;
     public float timeRemaining;
 
     public void Awake()
@@ -20,5 +21,10 @@ public class Platforms : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    private void OnDestroy()
+    {
+        gc.platforms++;
     }
 }
