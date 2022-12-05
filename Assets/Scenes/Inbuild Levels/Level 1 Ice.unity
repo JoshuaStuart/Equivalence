@@ -1795,6 +1795,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  am: {fileID: 0}
+  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11321,6 +11323,14 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 270948316}
+    - target: {fileID: 1961205792112400979, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: newPlatform
+      value: 
+      objectReference: {fileID: 5019343517537156993, guid: 9c5d1d3614d93324796e1175d8ed47e5, type: 3}
+    - target: {fileID: 1961205792112400979, guid: c930243d55f54534490b012ae2a70d30, type: 3}
+      propertyPath: maxPlatforms
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1961205792112400982, guid: c930243d55f54534490b012ae2a70d30, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -14587,6 +14597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  am: {fileID: 0}
+  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16202,7 +16214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1433177955431480194, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1433177955431480313, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
       propertyPath: m_Pivot.x

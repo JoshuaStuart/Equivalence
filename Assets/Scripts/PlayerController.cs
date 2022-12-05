@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public AbilityManager am;
+
     [Header("Movement")]
     public float speed;
 
@@ -50,6 +52,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         initalGravityScale = rb.gravityScale;
         anim = GetComponent<Animator>();
+
+        playerAbilities();
     }
 
     private void FixedUpdate()
@@ -180,5 +184,12 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         
+    }
+
+    public void playerAbilities()
+    {
+        canCreate = am.building;
+        canGlide = am.gliding;
+        //am.shooting;
     }
 }

@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
+    public AbilityManager am;
+    public PlayerController pc;
+
+    private void Awake()
+    {
+        am = FindObjectOfType<AbilityManager>();
+    }
+
     public void LoadLevelSelect()
     {
         Time.timeScale = 1;
@@ -59,6 +67,7 @@ public class PlayQuit : MonoBehaviour
 
     public void LoadLeve4_A()
     {
+        am.building = pc.canCreate;
         Time.timeScale = 1;
         SceneManager.LoadScene(8);
     }
@@ -93,54 +102,4 @@ public class PlayQuit : MonoBehaviour
         SceneManager.LoadScene(13);
     }
 
-
-    /* //better worded functions for swapping to the correct level scene
-    public void LoadLeve7_A()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(14);
-    }
-
-    public void LoadLeve7_B()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(15);
-    }
-
-    public void LoadLeve8_A()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(16);
-    }
-
-    public void LoadLeve8_B()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(17);
-    }
-
-    public void LoadLeve9_A()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(18);
-    }
-
-    public void LoadLeve9_B()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(19);
-    }
-
-    public void LoadLeve10_A()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(20);
-    }
-
-    public void LoadLeve10_B()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene(21);
-    }
-     */
 }
