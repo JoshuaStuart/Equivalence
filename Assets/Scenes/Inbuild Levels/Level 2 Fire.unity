@@ -1914,8 +1914,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11163,8 +11161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11599,6 +11595,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1433177955431480317, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 731171188}
+    - target: {fileID: 1433177955431480317, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
+      propertyPath: platformObject
+      value: 
+      objectReference: {fileID: 1965331560}
+    - target: {fileID: 1433177955431480317, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
+      propertyPath: maxCollectables
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
 --- !u!114 &1965331559 stripped
@@ -11612,6 +11620,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26041331459efa545b7a736378d4c846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1965331560 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1433177955254474481, guid: 6c04b14a852593349ad3ec87bc57b1e5, type: 3}
+  m_PrefabInstance: {fileID: 1965331558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1969943254
 PrefabInstance:
   m_ObjectHideFlags: 0
