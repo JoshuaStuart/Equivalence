@@ -1914,6 +1914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  am: {fileID: 0}
+  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2795,11 +2797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1842801308703252872, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -134.3
+      value: 392.1
       objectReference: {fileID: 0}
     - target: {fileID: 1842801308703252872, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 67.1
+      value: 83.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
@@ -11161,6 +11163,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  am: {fileID: 0}
+  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11994,6 +11998,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Demon (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1842801308064374644, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1842801308064374646, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12044,11 +12052,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1842801308703252872, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -58.205
+      value: 425.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1842801308703252872, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -17.200012
       objectReference: {fileID: 0}
     - target: {fileID: 1842801308703252872, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 29.103
+      value: 66.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 348abb1c8bbb36846a13ae36a7e935c1, type: 3}
