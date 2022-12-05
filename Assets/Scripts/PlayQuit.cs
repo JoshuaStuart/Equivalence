@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class PlayQuit : MonoBehaviour
 {
-    public AbilityManager am;
-    public PlayerController pc;
+    //public AbilityManager am;
+    //public PlayerController pc;
 
-    private void Awake()
-    {
-        am = FindObjectOfType<AbilityManager>();
-    }
+    //private void Awake()
+    //{
+    //    am = FindObjectOfType<AbilityManager>();
+    //}
 
     public void LoadLevelSelect()
     {
@@ -67,7 +67,7 @@ public class PlayQuit : MonoBehaviour
 
     public void LoadLeve4_A()
     {
-        am.building = pc.canCreate;
+        //am.building = pc.canCreate;
         Time.timeScale = 1;
         SceneManager.LoadScene(8);
     }
