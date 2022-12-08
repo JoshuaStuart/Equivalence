@@ -35,4 +35,10 @@ public class GameCounter : MonoBehaviour
             platformObject.SetActive(false);
         }
     }
+
+    private void Awake()
+    {
+        collectables = 0;
+        platforms = 0;
+    }
 }

@@ -35,10 +35,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inbuild Levels/Level 4 Fire.unity
     guid: 846ccf6f2fe5cd244bacf3c51b6a1371
-  - enabled: 1
-    path: Assets/Scenes/Inbuild Levels/Level 5 Ice.unity
-    guid: b449bd52cf4924a45a2f477ba364c7a7
-  - enabled: 1
-    path: Assets/Scenes/Inbuild Levels/Level 5 Fire.unity
-    guid: 0514a260f16b7cf4fb5cc57485669e79
   m_configObjects: {}
