@@ -1446,8 +1446,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7093,7 +7091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5916371802466810306, guid: b77b263d2f6f81e44bddac14881287f4, type: 3}
       propertyPath: m_Text
-      value: Wow is getting hot
+      value: Wow it's getting hot
       objectReference: {fileID: 0}
     - target: {fileID: 5916371802755411241, guid: b77b263d2f6f81e44bddac14881287f4, type: 3}
       propertyPath: m_RootOrder
@@ -10476,8 +10474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0

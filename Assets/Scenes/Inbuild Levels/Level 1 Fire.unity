@@ -1667,7 +1667,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 868797136276187423, guid: 98215f0b359a24d42a6b8f9b24220a58, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 98215f0b359a24d42a6b8f9b24220a58, type: 3}
 --- !u!4 &212693026 stripped
 Transform:
@@ -1899,8 +1900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2946,7 +2945,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2346882852803698002, guid: cdc61ca52821eaa47950ac23ff80712c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cdc61ca52821eaa47950ac23ff80712c, type: 3}
 --- !u!1 &350876817
 GameObject:
@@ -14799,8 +14799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0
