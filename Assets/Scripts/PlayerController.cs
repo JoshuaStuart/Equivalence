@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
 
     //keeping track of what has been collected, use in player script
-    public List<string> collection;
+    public List<int> collection;
 
     [Header("Platform Creation")]
     //setting up details for creating platforms whilst jumping
@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        collection = new List<string>();
+        collection = new List<int>();
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         initalGravityScale = rb.gravityScale;
@@ -169,10 +169,10 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("collectable hit");
 
-            string itemType = collision.gameObject.GetComponent<Collectable>().itemType;
+            int itemType = collision.gameObject.GetComponent<Collectable>().collectableNumber;
 
             //need to use playerprefs to keep the list intact in order to not lose those already collected
-            PlayerPrefs.SetString(itemType, itemType);
+            //PlayerPrefs.SetString(itemType, itemType);
 
             collection.Add(itemType);
 
