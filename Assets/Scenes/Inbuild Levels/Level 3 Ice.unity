@@ -1401,8 +1401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &242268110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13902,8 +13900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80bda4179c1f18b4fa8a48427a3608d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  am: {fileID: 0}
-  pc: {fileID: 0}
 --- !u!114 &1918549253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14899,6 +14895,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1374153540}
+    - target: {fileID: 3970739017669621799, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3970739018333709560, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: gc
       value: 
@@ -14907,6 +14907,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1374153540}
+    - target: {fileID: 3970739018333709560, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3970739018530921190, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: gc
       value: 
@@ -14915,6 +14919,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1374153540}
+    - target: {fileID: 3970739018530921190, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4121462747398320601, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: dialogueBox
       value: 

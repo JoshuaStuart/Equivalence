@@ -18,7 +18,7 @@ public class Collectable : MonoBehaviour
 
     private void Awake()
     {
-        if (player.collection.Contains(itemType) || PlayerPrefs.HasKey(itemType))
+        if (player.collection.Contains(collectableNumber) /* || PlayerPrefs.HasKey(collectableNumber)*/)
         {
             //the collectable has already been collected
             Destroy(gameObject);

@@ -9,6 +9,8 @@ public class Platforms : MonoBehaviour
 
     public void Awake()
     {
+        gc = FindObjectOfType<GameCounter>();
+
         timeRemaining = 2;
     }
     private void Update()

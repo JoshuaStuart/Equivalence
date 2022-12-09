@@ -7989,6 +7989,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 102756864}
+    - target: {fileID: 3696560928798419038, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
+      propertyPath: collectableNumber
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4423753116409724287, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
       propertyPath: dialogueBox
       value: 
@@ -8009,6 +8013,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 102756864}
+    - target: {fileID: 7869613174586107304, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
+      propertyPath: collectableNumber
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7869613174888963928, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
       propertyPath: gc
       value: 
@@ -8017,6 +8025,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 102756864}
+    - target: {fileID: 7869613174888963928, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
+      propertyPath: collectableNumber
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a268dd8b7b53b842897b64a1c792922, type: 3}
 --- !u!1001 &747316371

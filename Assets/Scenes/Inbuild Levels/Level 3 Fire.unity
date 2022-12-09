@@ -4879,6 +4879,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1986197606}
+    - target: {fileID: 3970739017669621799, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 3970739018333709560, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: gc
       value: 
@@ -4887,6 +4891,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1986197606}
+    - target: {fileID: 3970739018333709560, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3970739018530921190, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: gc
       value: 
@@ -4895,6 +4903,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1986197606}
+    - target: {fileID: 3970739018530921190, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
+      propertyPath: collectableNumber
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4121462747398320601, guid: 0115d6b89df2d1c48b88f83e56b6fc75, type: 3}
       propertyPath: dialogueBox
       value: 
