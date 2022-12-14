@@ -225,8 +225,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e42224ee7c41424a8d4fe56ed77fd3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  am: {fileID: 0}
   speed: 5
-  jumpForce: 6
+  jumpForce: 7
   canGlide: 0
   glidingSpeed: -1
   groundCheck: {fileID: 7051218937363732688}
@@ -235,10 +236,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   extraJumpsValue: 0
-  collection: []
+  collection: 
   newPlatform: {fileID: 0}
   canCreate: 0
   currentPlatform: {fileID: 0}
+  maxPlatforms: 0
+  usedPlatforms: 0
+  pauseMenu: {fileID: 0}
 --- !u!114 &7051218937597721397
 MonoBehaviour:
   m_ObjectHideFlags: 0
