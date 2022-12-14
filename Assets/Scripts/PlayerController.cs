@@ -135,7 +135,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log(groundinfo.collider);
 
                 //the player must use a button possibly a mouse click as this will be on the ice character as the fire will be able to shoot
-                if ((Input.GetMouseButtonDown(0) && groundinfo.collider.tag != "ground" && (usedPlatforms <= maxPlatforms))/* add in a part to allow a set amount of paltforms created */)
+                if ((Input.GetMouseButtonDown(1) && groundinfo.collider.tag != "ground" && (usedPlatforms <= maxPlatforms))/* add in a part to allow a set amount of paltforms created */)
                 {
                     usedPlatforms++;
                     currentPlatform = Instantiate(newPlatform);
