@@ -9744,6 +9744,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: eebb5165d834b1e43bc7e213628ad31f, type: 3}
+    - target: {fileID: 5612726838930786139, guid: 6d084703d915f2e4489453249d4ff152, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d084703d915f2e4489453249d4ff152, type: 3}
 --- !u!4 &929329115 stripped
@@ -23055,6 +23059,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f1761911fe1b42a4fb2142638a0f1ccb, type: 3}
+    - target: {fileID: 4264390936358062831, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7366509702407021773, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -23272,6 +23280,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c29e7f2399b8d724a9bf92556082153d, type: 3}
+    - target: {fileID: 8739969579104815457, guid: 048da9dd1f1570f4a8e95243999d58be, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048da9dd1f1570f4a8e95243999d58be, type: 3}
 --- !u!4 &2589595026407201749 stripped
@@ -23601,6 +23613,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d5c3bf87709398d44b1b275c8438e1dd, type: 3}
+    - target: {fileID: 7242417800596454445, guid: dad96eaa516b3db4e916fe4316f5d685, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7724276743581371275, guid: dad96eaa516b3db4e916fe4316f5d685, type: 3}
       propertyPath: m_Name
       value: Up Arrow
@@ -23733,6 +23749,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d5c3bf87709398d44b1b275c8438e1dd, type: 3}
+    - target: {fileID: 7242417800596454445, guid: dad96eaa516b3db4e916fe4316f5d685, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7724276743581371275, guid: dad96eaa516b3db4e916fe4316f5d685, type: 3}
       propertyPath: m_Name
       value: Up Arrow (1)

@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 103300882}
   - component: {fileID: 103300881}
   - component: {fileID: 103300883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54855,6 +54855,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 44adb05f7c22e2249983bfad015fa0b4, type: 3}
+    - target: {fileID: 4264390936358062831, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7366509702407021773, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -67432,7 +67436,7 @@ GameObject:
   - component: {fileID: 1481166724}
   - component: {fileID: 1481166723}
   - component: {fileID: 1481166725}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70053,6 +70057,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 44adb05f7c22e2249983bfad015fa0b4, type: 3}
+    - target: {fileID: 4264390936358062831, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7366509702407021773, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -71777,6 +71785,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 69401e308b0d10847bf1a059c2d432f5, type: 3}
+    - target: {fileID: 5612726838930786139, guid: 6d084703d915f2e4489453249d4ff152, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d084703d915f2e4489453249d4ff152, type: 3}
 --- !u!4 &1681626535 stripped
@@ -73619,6 +73631,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f40bc2d7b0adfc04b97ba26a9b3421a1, type: 3}
+    - target: {fileID: 8739969579104815457, guid: 048da9dd1f1570f4a8e95243999d58be, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 048da9dd1f1570f4a8e95243999d58be, type: 3}
 --- !u!4 &1778219166 stripped
@@ -76222,6 +76238,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 41897b7d1efed8c4daecde5fba62b07d, type: 3}
+    - target: {fileID: 4264390936358062831, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     - target: {fileID: 7366509702407021773, guid: 588c96871b543754aaaa2864ce368c6e, type: 3}
       propertyPath: m_RootOrder
       value: 3
