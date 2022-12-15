@@ -185,7 +185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1961205792112400972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -1.05, z: -2.6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.0555, y: 2.0555, z: 2.0555}
   m_Children:
   - {fileID: 1961205790737578417}
@@ -354,6 +354,7 @@ MonoBehaviour:
   jumpForce: 5
   canGlide: 1
   glidingSpeed: -1
+  facingRight: 1
   groundCheck: {fileID: 1961205790737578417}
   checkRadius: 0.5
   whatIsGround:
@@ -385,6 +386,7 @@ MonoBehaviour:
   maxDistance: 10
   grappleSpeed: 10
   grappleShootSpeed: 20
+  sound: {fileID: 0}
   retracting: 0
 --- !u!212 &1961205792112400976
 SpriteRenderer:
