@@ -9,31 +9,31 @@ public class Weapon : MonoBehaviour
 
     private void Awake()
     {
-        if (PlayerPrefs.GetInt("Shooting") == 1)
-        {
-            //this.gameObject.SetActive(true);
-            this.gameObject.GetComponent<Weapon>().enabled = true;
-        }
-        else
-        {
-            bool shooting = this.gameObject.GetComponent<Weapon>().isActiveAndEnabled;
+        //if (PlayerPrefs.GetInt("Shooting") == 1)
+        //{
+        //    //this.gameObject.SetActive(true);
+        //    this.gameObject.GetComponent<Weapon>().enabled = true;
+        //}
+        //else
+        //{
+        //    bool shooting = this.gameObject.GetComponent<Weapon>().isActiveAndEnabled;
 
-            Debug.Log(shooting);
+        //    Debug.Log(shooting);
 
-            int shots = 0;
+        //    int shots = 0;
 
-            if (shooting == true)
-            {
-                shots = 1;
-            }
-            else
-            {
-                shots = 0;
-            }
+        //    if (shooting == true)
+        //    {
+        //        shots = 1;
+        //    }
+        //    else
+        //    {
+        //        shots = 0;
+        //    }
 
-            PlayerPrefs.SetInt("Shooting", shots);
-            Debug.Log(shots);
-        }
+        //    //PlayerPrefs.SetInt("Shooting", shots);
+        //    Debug.Log(shots);
+        //}
 
     }
 
