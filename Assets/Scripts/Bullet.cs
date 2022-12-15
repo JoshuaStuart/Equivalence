@@ -6,19 +6,42 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody2D rb;
-    
+
+    public PlayerController pc;
+
+    private void Awake()
+    {
+        pc = FindObjectOfType<PlayerController>();
+    }
+
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        //change the transofrm based on which wya th eplayer is going
+        if (pc.facingRight == true)
+        {
+            rb.velocity = transform.right * speed;
+        }
+        else
+        {
+            rb.velocity = (transform.right * -1) * speed;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if(enemy != null)
+        if (hitInfo.tag != "Enemy")
         {
-            enemy.TakeDamage(50);
+            //dont destroy
         }
-        Destroy(gameObject);
+        else
+        {
+            Enemy enemy = hitInfo.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(50);
+            }
+            Destroy(gameObject);
+        }
+
     }
 }
