@@ -222,11 +222,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7051218937597721399, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 7051218937597721399, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.3
+      value: 47.3
       objectReference: {fileID: 0}
     - target: {fileID: 7051218937597721399, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3940,7 +3940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1896330823}
 --- !u!1001 &411201348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39992,7 +39992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a405c654f6cb924cbc8ba12f0d51385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1896330823}
 --- !u!61 &1146891755
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -46101,6 +46101,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1896330823 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7051218937597721389, guid: 6caec1d9f20983d4ba2daff9f28b038a, type: 3}
+  m_PrefabInstance: {fileID: 35092324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898186480
 GameObject:
   m_ObjectHideFlags: 0
