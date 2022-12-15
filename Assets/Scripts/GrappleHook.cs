@@ -10,6 +10,7 @@ public class GrappleHook : MonoBehaviour
     [SerializeField] float maxDistance = 10f;
     [SerializeField] float grappleSpeed = 10f;
     [SerializeField] float grappleShootSpeed = 10f;
+    public AudioSource sound;
 
     bool isGrappling = false;
     [HideInInspector] public bool retracting = false;
@@ -58,6 +59,7 @@ public class GrappleHook : MonoBehaviour
 
     private void StartGrapple()
     {
+
         Vector2 direction = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, maxDistance, grappleableMask);
@@ -77,6 +79,9 @@ public class GrappleHook : MonoBehaviour
 
     IEnumerator Grapple()
     {
+
+        sound.Play();
+
         float t = 0;
         float time = 10;
         line.SetPosition(0, transform.position);

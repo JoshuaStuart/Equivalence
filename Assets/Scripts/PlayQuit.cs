@@ -21,6 +21,7 @@ public class PlayQuit : MonoBehaviour
 
     public void QuitGame()
     {
+        //PlayerPrefs.SetInt("Shooting", 0);
         Application.Quit();
     }
 
