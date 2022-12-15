@@ -7,11 +7,13 @@ public class Platforms : MonoBehaviour
     public GameCounter gc;
     public float timeRemaining;
 
+
     public void Awake()
     {
         gc = FindObjectOfType<GameCounter>();
 
         timeRemaining = 2;
+
     }
     private void Update()
     {
@@ -23,6 +25,7 @@ public class Platforms : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
     }
 
     private void OnDestroy()

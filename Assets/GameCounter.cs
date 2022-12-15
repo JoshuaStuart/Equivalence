@@ -18,10 +18,37 @@ public class GameCounter : MonoBehaviour
     public GameObject platformText;
     public GameObject platformObject;
 
+    [Header("Timer")]
+    public float timeTillReset;
+    public float timer;
+
+    private void Awake()
+    {
+        collectables = 0;
+        platforms = 0;
+
+        timeTillReset = 10;
+    }
+
     public void Update()
     {
         collectableText.GetComponent<Text>().text = (collectables + "/" + maxCollectables);
         platformText.GetComponent<Text>().text = (platforms + "/" + maxPlatforms);
+
+
+        timeTillReset -= Time.deltaTime;
+
+        if (timeTillReset < 1)
+        {
+            platforms--;
+
+            if (platforms < 0)
+            {
+                platforms = 0;
+            }
+
+            timeTillReset = timer;
+        }
     }
 
     private void Start()
@@ -36,9 +63,4 @@ public class GameCounter : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        collectables = 0;
-        platforms = 0;
-    }
 }
