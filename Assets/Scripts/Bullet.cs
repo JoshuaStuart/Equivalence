@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
 
     public PlayerController pc;
 
+    public bool facingRight = true;
+
     private void Awake()
     {
         pc = FindObjectOfType<PlayerController>();
@@ -24,6 +26,18 @@ public class Bullet : MonoBehaviour
         else
         {
             rb.velocity = (transform.right * -1) * speed;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (facingRight == false)
+        {
+            Flip();
+        }
+        else if (facingRight == true)
+        {
+            Flip();
         }
     }
 
@@ -43,5 +57,13 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
 
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 Scaler = transform.localScale;
+        Scaler.x *= -1;
+        transform.localScale = Scaler;
     }
 }
